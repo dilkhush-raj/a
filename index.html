@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilkhush Raj</title>
+    <!-- Website Icon -->
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+    <!-- Fontawesome icons -->
+    <!-- <script src="https://kit.fontawesome.com/56c2d90425.js" crossorigin="anonymous"></script> -->
+    <script src="/fontawesome.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <script src="/animate.js"></script>
+    <!-- Typewriter Effect -->
+    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+    <script src="/typewritter.js"></script>
+    <!-- CSS shake -->
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <!-- <script src="/csshake.min.css"></script> -->
+    <!-- lottie-player  -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!-- <script src="/lottie.js"></script> -->
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body class="shake-slow shake-constant shake-constant--hover"> -->
+
+<body>
+
+
+    <div class="navbar-root">
+        <a to="#" class="menu-bars" onclick="menu()">
+            <div class="navbar fas fa-bars" id="bar">
+            </div>
+        </a>
+        <nav id="menu" class="nav-menu-wrap ">
+            <div class="profileWrap center">
+                <img src="./img/me1.jpg" alt="Dilkhush Raj" class="dp shake-little" />
+                <h2 class="nav-h2">Dilkhush Raj</h2>
+                <ul class="social-media">
+                    <li key={index} class="social-media-link shake-slow">
+                        <a href="#" target="_blank">
+                            <div class="social-icon"><i class="fab fa-discord"></i></div>
+                        </a>
+                    </li>
+                    <li key={index} class="social-media-link shake-slow">
+                        <a href="https://www.instagram.com/dilkhush.insta/" target="_blank">
+                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                        </a>
+                    </li>
+                    <li key={index} class="social-media-link shake-slow">
+                        <a href="https://github.com/dilkhush-github/" target="_blank">
+                            <div class="social-icon"><i class="fab fa-github"></i></div>
+                        </a>
+                    </li>
+                    <li key={index} class="social-media-link shake-slow">
+                        <a href="https://www.linkedin.com/in/dilkhush-raj/" target="_blank">
+                            <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-menu-iteam">
+                    <li class="nav-text shake-little"><a href="#">About Me</a></li>
+                    <li class="nav-text shake-little"><a href="#">My Skills</a></li>
+                    <li class="nav-text shake-little"><a href="#">My Projects</a></li>
+                    <li class="nav-text shake-little"><a href="#">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="hero hero-home">
+        <lottie-player class="shake-little" src="/hi.json" background="transparent" speed="1"
+            style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <h1> Dilkhush Raj</h1><br>
+            <div class="typewriter">
+        <span>I'm &nbsp;</span><span id="typewritter-text"><noscript>Enable script to view this</noscript></span>
+    </div>
+
+
+    </div>
+    <div class="home">
+        <section id="about">
+            <h2>About Me</h2>
+            <br />
+            Hi, my name is Dilkhush Raj. I'm a BCA student and learning
+            web-development. This my personal website where I share information
+            about me and all projects done by me. You can follow me on social media, links are given in sidebar as well
+            as
+            in footer.
+            Thankyou for visiting. 🧡
+            
+        </section>
+        <section id="skill">
+            <h2>My Skills</h2><br />
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>React</li>
+                <li>Photoshop</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2><br />
+            Here, my some of projects are listed below.
+        </section>
+        <section id="contact">
+
+            
+            <h2>Contact Me</h2>
+            <!-- <div class="contact">
+                <hr />
+                <div class="contact-details">
+                    <img src="/images/qrcode (1).png" alt="" />
+                    <h4>#Name</h4>
+                    <span>: Dilkhush Raj</span>
+                    <h4>#Profession</h4>
+                    <span>: Web-developer</span>
+                    <h4>#Details</h4>
+                    <span>Discord: Dilkhush Raj#3770</span>
+                    <br />
+                    <span>Website: dilkhush.epizy.com</span>
+                    <br />
+                    <span>Email: dilkhush_raj@outlook.com</span>
+                </div>
+                <hr />
+            </div> -->
+        </section>
+    </div>
+    <footer>
+        Made with ❤ <a href="https://dilkhush.epizy.com">dilkhush.epizy.com</a>
+    </footer>
+
+    <script>
+        function menu() {
+            var element = document.getElementById("menu");
+            var bar = document.getElementById("bar")
+            element.classList.toggle("active");
+            bar.classList.toggle("fa-times");
+        }
+
+        var app = document.getElementById('typewritter-text');
+
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75,
+        });
+
+        typewriter
+            .pauseFor(2000)
+            .typeString('BCA student')
+            .pauseFor(2500)
+            .deleteChars(11)
+            .typeString('Learning Web-development')
+            .pauseFor(2500)
+            .start();
+
+    </script>
+
+
+
+</body>
+
+</html>
