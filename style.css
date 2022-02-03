@@ -394,10 +394,11 @@ hr {
 
 
 /* Hero Section Ends  */
-/* About Section Starts  */
 
+/* About Section Starts  */
 #about{
   background-color: orange;
+  border-bottom: 10px solid orange;
   padding: 20px;
   min-height: 100vh;
 }
@@ -407,6 +408,7 @@ hr {
 /* Skill Section Starts  */
 #skill{
   background-color: royalblue;
+  border-bottom: 10px solid royalblue;
   padding: 20px;
   min-height: 100vh;
 }
@@ -416,6 +418,7 @@ hr {
 
 #projects{
   background-color: #00b460;
+  border-bottom: 10px solid #00b460;
   padding: 20px;
   min-height: 100vh;
 }
@@ -426,6 +429,7 @@ hr {
 
 #contact{
   background-color: firebrick;
+  border-bottom: 10px solid firebrick-bottom;
   padding: 20px;
   min-height: 100vh;
 }

@@ -21,13 +21,19 @@
     <!-- lottie-player  -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- <script src="/lottie.js"></script> -->
+    <!-- Scroll bar  -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="/aos.css">
+
     <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <!-- <body class="shake-slow shake-constant shake-constant--hover"> -->
 
-<body>
+<body id="home">
 
 
     <div class="navbar-root">
@@ -40,22 +46,22 @@
                 <img src="./img/me1.jpg" alt="Dilkhush Raj" class="dp shake-little" />
                 <h2 class="nav-h2">Dilkhush Raj</h2>
                 <ul class="social-media">
-                    <li key={index} class="social-media-link shake-slow">
-                        <a href="#" target="_blank">
-                            <div class="social-icon"><i class="fab fa-discord"></i></div>
-                        </a>
-                    </li>
-                    <li key={index} class="social-media-link shake-slow">
+                    <li class="social-media-link shake-slow">
                         <a href="https://www.instagram.com/dilkhush.insta/" target="_blank">
                             <div class="social-icon"><i class="fab fa-instagram"></i></div>
                         </a>
+                    </li>                    
+                    <li class="social-media-link shake-slow">
+                        <a href="https://twitter.com/Dilkhush_India" target="_blank">
+                            <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                        </a>
                     </li>
-                    <li key={index} class="social-media-link shake-slow">
+                    <li class="social-media-link shake-slow">
                         <a href="https://github.com/dilkhush-github/" target="_blank">
                             <div class="social-icon"><i class="fab fa-github"></i></div>
                         </a>
                     </li>
-                    <li key={index} class="social-media-link shake-slow">
+                    <li class="social-media-link shake-slow">
                         <a href="https://www.linkedin.com/in/dilkhush-raj/" target="_blank">
                             <div class="social-icon"><i class="fab fa-linkedin"></i></div>
                         </a>
@@ -67,41 +73,53 @@
             </div>
             <div class="nav-menu">
                 <ul class="nav-menu-iteam">
-                    <li class="nav-text shake-little"><a href="#">About Me</a></li>
-                    <li class="nav-text shake-little"><a href="#">My Skills</a></li>
-                    <li class="nav-text shake-little"><a href="#">My Projects</a></li>
-                    <li class="nav-text shake-little"><a href="#">Contact Me</a></li>
+                    <li class="nav-text shake-little"><a href="#">Home</a></li>
+                    <li class="nav-text shake-little"><a href="#about">About Me</a></li>
+                    <li class="nav-text shake-little"><a href="#skill">My Skills</a></li>
+                    <li class="nav-text shake-little"><a href="#projects">My Projects</a></li>
+                    <li class="nav-text shake-little"><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </div>
 
-
     <div class="hero hero-home">
         <lottie-player class="shake-little" src="/hi.json" background="transparent" speed="1"
             style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-            <h1> Dilkhush Raj</h1><br>
-            <div class="typewriter">
-        <span>I'm &nbsp;</span><span id="typewritter-text"><noscript>Enable script to view this</noscript></span>
-    </div>
+        <h1> Dilkhush Raj</h1><br>
+        <div class="typewriter">
+            <span>I'm &nbsp;</span><span id="typewritter-text"><noscript>Enable script to view this</noscript></span>
+        </div>
 
 
     </div>
+
     <div class="home">
-        <section id="about">
-            <h2>About Me</h2>
+        <section id="about" data-aos="zoom-in-down">
+            <h2 data-aos="fade-up-right" 
+            data-aos-duration="1000">About Me</h2>
             <br />
+            <span data-aos="fade-up-left" 
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center">
             Hi, my name is Dilkhush Raj. I'm a BCA student and learning
             web-development. This my personal website where I share information
             about me and all projects done by me. You can follow me on social media, links are given in sidebar as well
             as
             in footer.
             Thankyou for visiting. 🧡
-            
+        </span>
+
         </section>
-        <section id="skill">
-            <h2>My Skills</h2><br />
-            <ul>
+        <section id="skill" data-aos="zoom-in-down">
+            <h2 data-aos="fade-up-right" 
+            data-aos-duration="1000">My Skills</h2><br />
+            <span data-aos="fade-up-left" 
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center">
+            <ul data-aos="fade-up-left" 
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -109,46 +127,50 @@
                 <li>React</li>
                 <li>Photoshop</li>
             </ul>
+            </span>
         </section>
-        <section id="projects">
-            <h2>My Projects</h2><br />
+        <section id="projects" data-aos="zoom-in-down">
+            <h2 data-aos="fade-up-right" 
+            data-aos-duration="1000">My Projects</h2><br />
+            <span data-aos="fade-up-left" 
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center">
             Here, my some of projects are listed below.
+            </span>
         </section>
-        <section id="contact">
-
-            
-            <h2>Contact Me</h2>
-            <!-- <div class="contact">
-                <hr />
-                <div class="contact-details">
-                    <img src="/images/qrcode (1).png" alt="" />
-                    <h4>#Name</h4>
-                    <span>: Dilkhush Raj</span>
-                    <h4>#Profession</h4>
-                    <span>: Web-developer</span>
-                    <h4>#Details</h4>
-                    <span>Discord: Dilkhush Raj#3770</span>
-                    <br />
-                    <span>Website: dilkhush.epizy.com</span>
-                    <br />
-                    <span>Email: dilkhush_raj@outlook.com</span>
-                </div>
-                <hr />
-            </div> -->
+        <section id="contact" data-aos="zoom-in-down">
+            <h2 data-aos="fade-up-right" 
+            data-aos-duration="1000">Contact Me</h2>
+            <span data-aos="fade-up-left" 
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center">
+            <br>
+            Contact me at : dilkhush_raj@yahoo.com
+            </span>
         </section>
     </div>
+
     <footer>
         Made with ❤ <a href="https://dilkhush.epizy.com">dilkhush.epizy.com</a>
     </footer>
 
+    <!-- Animate on Scroll Start  -->
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="/aos.js"></script>
+    <!-- Animate on Scroll End  -->
+
     <script>
+
+        // Burger Menu Start
         function menu() {
             var element = document.getElementById("menu");
             var bar = document.getElementById("bar")
             element.classList.toggle("active");
             bar.classList.toggle("fa-times");
         }
+        // Burger Menu End
 
+        // Typewriter Home Start
         var app = document.getElementById('typewritter-text');
 
         var typewriter = new Typewriter(app, {
@@ -164,11 +186,11 @@
             .typeString('Learning Web-development')
             .pauseFor(2500)
             .start();
+        // Typewriter Home End
+
+        AOS.init(); // Animate On Scroll Initailizing code 
 
     </script>
-
-
-
 </body>
 
 </html>
