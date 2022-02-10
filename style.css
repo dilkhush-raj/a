@@ -243,7 +243,7 @@ FOR DISPLAY WIDTH MORE THAN 769px
    background-size: cover;
    background-position: center;   
    background-image: url(/img/hero-img.svg);
-   background-size: 70vh;
+   background-size: 100vh;
    background-color: skyblue;
    background-position: bottom;
 }
@@ -310,9 +310,9 @@ FOR DISPLAY WIDTH MORE THAN 769px
       gap: 2rem;
       align-items: center;
   }
-  .hero-home{
+  .hero{
     background-size: 70vw;
-}
+  }
 .nav-menu-wrap {
   left: 0;
 }
