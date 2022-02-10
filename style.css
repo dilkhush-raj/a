@@ -38,6 +38,7 @@
 
   a{
       text-decoration: none;
+      color: #002;
   }
   
   ul{
@@ -79,6 +80,10 @@
     color: var(--color2);
   }
 
+  .home{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
 /* Navbar CSS */
 
@@ -198,12 +203,13 @@
 }
 
 .hero-home{
-    background-image: url(/img/undraw_into_the_night_vumi.svg);
-    background-size: 70vw;
-    background-color: #cff;
+    background-image: url(/img/hero-img.svg);
+    background-size: 70vh;
+    background-color: skyblue;
     background-position: bottom;
 }
 /* Hero Section Ends  */
+
 
 /* Footer Section Starts  */
 
@@ -246,8 +252,8 @@
   }
   
   .dp{
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 10px;
     border: 8px solid rgba(46, 39, 73, 0.4);
@@ -300,30 +306,6 @@
   }
 
 
-
-.big-heading{
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-}
-
-.about{
-    min-height: 100vh;
-    background-color: white;
-    padding: 10px;
-    padding-bottom: 0;
-    margin: 0;
-}
-
-b, .about ul > li{
-    line-height: 3;
-}
-
-.about .me{
-    margin: 1rem;
-    border: 8px solid #002;
-}
-
 .typewriter{
     font-size: 1.5rem;
     padding: 0 .5rem;
@@ -368,7 +350,6 @@ hr {
   }
   
   #contact span {
-    color: #0af;
     padding: 0.5rem;
     padding-left: 2rem;
   }
@@ -395,32 +376,35 @@ hr {
 
 /* Hero Section Ends  */
 
+/* Home Section Starts  */
+
+.home{
+  background-color: rgb(225, 255, 255);
+}
+
+/* Home Section Ends */
+
 /* About Section Starts  */
 #about{
-  background-color: orange;
-  border-bottom: 10px solid orange;
   padding: 20px;
-  min-height: 100vh;
+  line-height: 2rem;
+  /* min-height: 50vh; */
 }
 
 /* About Section Ends  */
 
 /* Skill Section Starts  */
 #skill{
-  background-color: royalblue;
-  border-bottom: 10px solid royalblue;
   padding: 20px;
-  min-height: 100vh;
+  /* min-height: 50vh; */
 }
 /* Skill Section Ends  */
 
 /* Projects Section Starts  */
 
 #projects{
-  background-color: #00b460;
-  border-bottom: 10px solid #00b460;
   padding: 20px;
-  min-height: 100vh;
+  /* min-height: 50vh; */
 }
 
 /* Projects Section Ends  */
@@ -428,10 +412,8 @@ hr {
 /* Contact Section Starts  */
 
 #contact{
-  background-color: firebrick;
-  border-bottom: 10px solid firebrick-bottom;
   padding: 20px;
-  min-height: 100vh;
+  /* min-height: 50vh; */
 }
 
 /* Contact Section Ends  */
@@ -453,6 +435,9 @@ footer a{
   .home, .hero{
       padding-left: 275px;
   }
+  .home{
+    grid-template-columns: 1fr 1fr;
+  }
   .nav-menu-wrap.active {
       left: 0;
   }
@@ -465,4 +450,11 @@ footer a{
       gap: 2rem;
       align-items: center;
   }
+  .hero-home{
+    background-size: 70vw;
+}
+}
+
+.bi-star-fill, .bi-star-half, .bi-star{
+  color: rgb(248, 223, 0);
 }

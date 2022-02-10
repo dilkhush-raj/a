@@ -4,31 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" />
+    <meta http-equiv="EXPIRES" content="0" />
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
     <title>Dilkhush Raj</title>
     <!-- Website Icon -->
     <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
-    <!-- Fontawesome icons -->
-    <!-- <script src="https://kit.fontawesome.com/56c2d90425.js" crossorigin="anonymous"></script> -->
-    <script src="/fontawesome.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
-    <script src="/animate.js"></script>
     <!-- Typewriter Effect -->
-    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
-    <script src="/typewritter.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!-- CSS shake -->
     <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <!-- <script src="/csshake.min.css"></script> -->
     <!-- lottie-player  -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- <script src="/lottie.js"></script> -->
     <!-- Scroll bar  -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <link rel="stylesheet" href="/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- Bootstrap Icon cdn Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
 
     <!-- custom css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v2">
 </head>
 
 <!-- <body class="shake-slow shake-constant shake-constant--hover"> -->
@@ -38,32 +36,32 @@
 
     <div class="navbar-root">
         <a to="#" class="menu-bars" onclick="menu()">
-            <div class="navbar fas fa-bars" id="bar">
+            <div class="navbar bi bi-list" id="bar">
             </div>
         </a>
         <nav id="menu" class="nav-menu-wrap ">
             <div class="profileWrap center">
-                <img src="./img/me1.jpg" alt="Dilkhush Raj" class="dp shake-little" />
+                <img src="./img/Dilkhush_Raj-150px.png" alt="Dilkhush Raj" class="dp shake-little" />
                 <h2 class="nav-h2">Dilkhush Raj</h2>
                 <ul class="social-media">
                     <li class="social-media-link shake-slow">
                         <a href="https://www.instagram.com/dilkhush.insta/" target="_blank">
-                            <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="social-icon"><i class="bi-instagram"></i></div>
                         </a>
-                    </li>                    
+                    </li>
                     <li class="social-media-link shake-slow">
                         <a href="https://twitter.com/Dilkhush_India" target="_blank">
-                            <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                            <div class="social-icon"><i class="bi-twitter"></i></div>
                         </a>
                     </li>
                     <li class="social-media-link shake-slow">
                         <a href="https://github.com/dilkhush-github/" target="_blank">
-                            <div class="social-icon"><i class="fab fa-github"></i></div>
+                            <div class="social-icon"><i class="bi-github"></i></div>
                         </a>
                     </li>
                     <li class="social-media-link shake-slow">
-                        <a href="https://www.linkedin.com/in/dilkhush-raj/" target="_blank">
-                            <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+                        <a href="https://www.linkedin.com/in/dilkhushraj/" target="_blank">
+                            <div class="social-icon"><i class="bi-linkedin"></i></div>
                         </a>
                     </li>
                 </ul>
@@ -86,67 +84,67 @@
     <div class="hero hero-home">
         <lottie-player class="shake-little" src="/hi.json" background="transparent" speed="1"
             style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            
         <h1> Dilkhush Raj</h1><br>
         <div class="typewriter">
             <span>I'm &nbsp;</span><span id="typewritter-text"><noscript>Enable script to view this</noscript></span>
         </div>
+        <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_FPH6Ci.json"  loop autoplay></lottie-player>
 
 
     </div>
 
     <div class="home">
-        <section id="about" data-aos="zoom-in-down">
-            <h2 data-aos="fade-up-right" 
-            data-aos-duration="1000">About Me</h2>
-            <br />
-            <span data-aos="fade-up-left" 
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center">
-            Hi, my name is Dilkhush Raj. I'm a BCA student and learning
-            web-development. This my personal website where I share information
-            about me and all projects done by me. You can follow me on social media, links are given in sidebar as well
-            as
-            in footer.
-            Thankyou for visiting. 🧡
-        </span>
+        <section id="about">
+            <h2 data-aos="slide-right"><i class="bi bi-lightbulb-fill"></i> About Me</h2>
+            <div data-aos="slide-right">
+                My name is Dilkhush Raj and I'm from Bihar, India. I am currently doing my BCA course from an Open
+                University (IGNOU). I am also learning web-development from Udemy by Dr. Angela Yu. Though most of my
+                time goes into my studies, I still do spend some hours on the Internet to learn about new technologies
+                and improve my current skills.
+            </div>
 
         </section>
-        <section id="skill" data-aos="zoom-in-down">
-            <h2 data-aos="fade-up-right" 
-            data-aos-duration="1000">My Skills</h2><br />
-            <span data-aos="fade-up-left" 
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center">
-            <ul data-aos="fade-up-left" 
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>React</li>
-                <li>Photoshop</li>
-            </ul>
-            </span>
+        <section id="skill">
+            <h2 data-aos="slide-right"><i class="bi bi-gear-fill"></i> My Skills</h2>
+            <div data-aos="slide-right">
+                <ul data-aos="slide-right">
+                    <li>HTML <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                            class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i>
+                    </li>
+                    <li>CSS <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                            class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i></li>
+                    <li>JavaScript <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                            class="bi bi-star"></i> <i class="bi bi-star"></i> <i class="bi bi-star"></i></li>
+                    <li>Bootstrap <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                            class="bi bi-star-fill"></i> <i class="bi bi-star-half"></i> <i class="bi bi-star"></i></li>
+                    <!-- <li>React <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i> <i class="bi bi-star"></i></li> -->
+                    <li>Photoshop <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i
+                            class="bi bi-star-fill"></i> <i class="bi bi-star"></i> <i class="bi bi-star"></i></li>
+                </ul>
+            </div>
         </section>
-        <section id="projects" data-aos="zoom-in-down">
-            <h2 data-aos="fade-up-right" 
-            data-aos-duration="1000">My Projects</h2><br />
-            <span data-aos="fade-up-left" 
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center">
-            Here, my some of projects are listed below.
-            </span>
+        <section id="projects">
+            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-terminal-fill"></i> My Projects 
+                <lottie-player src="https://assets3.lottiefiles.com/datafiles/aba45c7b75d547282b2dbdc97969412b/progress_bar.json"  loop autoplay></lottie-player></h2>
+            <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
+                <h4>My web-development projects:</h4>
+                <ul data-aos="slide-right">
+                    <li><a href="/projects/drum">Drum Kit v1.0</a></li>
+                    <li><a href="/projects/drum-kit">Drum Kit v2.0</a></li>
+                    <li><a href="/projects/top-singer/">List of top streamed artists on spotify</a></li>
+                    <li><a href="/error">My 404 Page</a></li>
+                </ul>
+            </div>
         </section>
-        <section id="contact" data-aos="zoom-in-down">
-            <h2 data-aos="fade-up-right" 
-            data-aos-duration="1000">Contact Me</h2>
-            <span data-aos="fade-up-left" 
-            data-aos-duration="1000"
-            data-aos-anchor-placement="top-center">
-            <br>
-            Contact me at : dilkhush_raj@yahoo.com
-            </span>
+        <section id="contact">
+            <h2 data-aos="slide-right" data-aos-anchor-placement="bottom-bottom"><i class="bi bi-person-lines-fill"></i> Contact Me</h2>
+            <div data-aos="slide-right" data-aos-anchor-placement="bottom-bottom">
+                Discord: Dilkhush Raj#3770 <br>
+                Email: dilkhush_raj@yahoo.com <br>
+            </div>
+             
         </section>
     </div>
 
@@ -155,8 +153,7 @@
     </footer>
 
     <!-- Animate on Scroll Start  -->
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-    <script src="/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Animate on Scroll End  -->
 
     <script>
@@ -166,7 +163,7 @@
             var element = document.getElementById("menu");
             var bar = document.getElementById("bar")
             element.classList.toggle("active");
-            bar.classList.toggle("fa-times");
+            bar.classList.toggle("bi-x");
         }
         // Burger Menu End
 
